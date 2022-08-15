@@ -1,5 +1,43 @@
-# Object file
-*.o
+local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Kavo-Ui/main/Darkrai%20Ui", true))()
+local Library = DarkraiX:Window("Players","","",Enum.KeyCode.RightControl);
 
-# Ada Library Information
-*.ali
+
+
+
+
+
+Tab1 = Library:Tab("Main")
+
+
+Tab1:Button("Button",function()
+    print("hi")
+end)
+
+Tab1:Toggle("Toggle",false,function(value)
+DarkraiX:ToggleUi()
+    end)
+
+
+Tab1:Slider("Slider",1,100,25,function(value)
+        print(value)
+    end)
+
+
+Tab1:Dropdown("Dropdown",{"yo","sus","pro"},function(value)
+            print(value)
+end)
+
+
+Tab1:Textbox("Textbox","",true,function(value)
+print(value)
+end)
+
+
+Tab1:Line()
+
+Tab1:Seperator("Seperator")
+
+--[[
+Tab1:Seperator(
+1 = Name (string)
+)
